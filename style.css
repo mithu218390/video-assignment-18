@@ -1,0 +1,457 @@
+
+/**** NEDDED CSS ****/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+.mid-content{
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+ body,h1,h2,h3,h4,h5,h6,p,a,span{
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/**** HEADER SECTION ****/
+.header-section {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 14px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+.header-section a{
+    color: #010101;
+}
+
+.header-logo{
+    width: 30%;
+}
+.logo img{
+    width: 60px;
+    float: left;
+    margin-right: 10px;
+}
+.logo span{
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 26px;
+    font-weight: 500;
+}
+.header-menu{
+    width: 56%;
+}
+.header-button{
+    width: 14%;
+    text-align: right;
+}
+.header-btn {
+    border: 2px solid #6278df;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 8px;
+    color: #6278df !important;
+    font-size: 20px;
+    font-weight: 600px;
+    font-weight: 600;
+    border: 4px solid #6278df;
+    transition: .5s;
+}
+.header-btn:hover{
+    background:  #6278df;
+    color: #fff !important;
+}
+.primary-menu{}
+.primary-menu ul{}
+.primary-menu ul li{
+    display: inline-block;
+}
+.primary-menu ul li a {
+    display: block;
+    padding: 0px 15px;
+    font-size: 23px;
+    line-height: 60px;
+}
+.primary-menu ul li a:hover{}
+
+/**** DROP DOWN MENU ****/
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/**** BANNER SECTION ****/
+.banner-section {
+    background: url(./imgg/mbr-4\(2\)\ -\ Copy.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 200px 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-top: 90px;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: -1;
+    
+}
+/* .mid-content{
+    z-index: 999;
+} */
+.banner-content h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.banner-content h2 {
+    font-size: 60px;
+    margin: 30px 0;
+}
+.default-btn {
+    color: #7d7d7d;
+    padding: 20px 30px;
+    background: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    transition: .4s;
+    z-index: 999;
+    
+}
+
+  .default-btn:hover{
+    background: #6278df;
+    color: #fff;
+    
+}
+.banner-section .fz{
+    font-size: 25px;
+}
+
+
+/**** BANNER BOTTOM ****/
+.banner-bottom{
+    background: #f7f9ff;
+    padding: 100px 0;
+}
+.video-left{
+    width: 48%;
+   
+}
+.video-content-right{
+    width: 48%;
+}
+.video-content-right h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.video-content-right p{
+    font-size: 20px;
+}
+
+/**** SERVICE SECTION ****/
+.service-section{
+    background: #fff;
+    padding: 100px 0;
+}
+
+.section-title h1 {
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+.section-title p{
+    color: #767676;
+    font-size: 26px;
+}
+
+
+.services-items{
+   margin-top: 90px;
+}
+.service-box {
+    width: 32%;
+    box-shadow: 4px 4px 30px rgb(0 0 0 / 10%);
+    margin-right: 2% !important;
+    margin-bottom: 30px !important;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.service-box:nth-child(3n+3) {
+    margin-right: 0 !important;
+}
+.s-icon{
+    width: 60px;
+    float: left;
+    min-height: 168px;
+    font-size: 45px;
+    color: #6278df;
+    margin-right: 10px;
+}
+.s-content{
+    margin-top: 8px;
+}
+.s-content h3{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.s-content p{
+    color: #767676;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+/* <!--**** PRICING TABLE SECTION **** --> */
+
+.pricing-table {
+    background: #eff2fc;
+    padding: 93px;
+}
+.section-title h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.pricing-tables {
+    margin-top: 70px;
+}
+.pricing-table-item{
+    width: 32%;
+    margin-right: 2%;
+    background: #fff;
+    box-shadow: 4px 4px 30px 0 #485ec093;
+}
+.pricing-table-item:nth-child(3n+3) {
+    margin-right: 0 !important;
+}
+.pricing-table-item p{}
+
+.p-heading{
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+.p-heading h4 {
+    font-size: 25px;
+    font-weight: 400;
+}
+.p-heading h1 {
+    font-size: 50px;
+    margin: 30px 0;
+}
+.p-heading h1 span {
+    font-size: 23px;
+    font-weight: 600;
+}
+.p-heading h5 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.p-heading p {
+    font-size: 26px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.575);
+    line-height: 1.6em;
+}
+
+.p-content{
+    padding: 30px;
+}
+.p-content ul{
+    list-style: none;
+}
+.p-content ul li {
+    margin: 30px 0;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.514);
+    
+}
+.p-content ul li span {
+    font-size: 30px;
+    color: #6278df;
+    width: 60px;
+    display: inline-block;
+}
+
+.p-button .default-btn{
+    box-shadow: 4px 4px 30px 0 #485ec093;
+}
+.pricing-table-item:hover .p-heading{
+    background: #6278df;
+    color: #fff;
+}
+.pricing-table-item:hover .p-button .default-btn{
+    color: #fff;
+    background: black;
+}
+
+/*  <!--**** TEAM SECTION **** --> */
+
+.team-section{
+    padding: 100px 0;
+}
+.team-section h2{
+    font-size: 40px;
+}
+.team-members {
+    margin: 70px 0;
+}
+.team-members .member{
+    width: 23%;
+    margin-right: 2%;
+    background: #fff;
+    box-shadow: 4px 4px 30px 0 #485ec093;
+}
+.team-members .member img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.member h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.member p {
+    font-size: 23px;
+}
+.team-members .member-bio {
+    padding: 27px;
+}
+/* <!--**** NEWSLATTER SECTION **** --> */
+.p-bg{
+    background: #f7f9ff;
+}
+.newslatter-section{
+    padding: 100px 0;
+}
+.newslatter-section .section-title{}
+.newslatter-section .section-title p{
+    font-size: 40px;
+}
+.newslatter-section .section-title h2 {
+    font-size: 74px;
+    font-weight: 100;
+    margin: 40px;
+}
+.newslatter-section .newslatter-form{}
+.newslatter-section .default-input {
+    padding: 35px 10px;
+    width: 489px;
+    font-size: 20px;
+    box-shadow: 4px 4px 30px 0 #485ec0f1;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: .5s;
+   
+}
+.newslatter-section .default-input:focus{
+    border: 1px solid #6278df;
+    box-shadow: 4px 4px 30px 0 #485ec093;
+}
+.newslatter-section .submit-btn {
+    font-size: 33px;
+    padding: 27px 100px;
+    background: #6278df;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    bottom: -3px;
+    margin: 25px;
+    border: 2px solid #6278df;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .5s;
+    border: 2px solid transparent;
+}
+.newslatter-section .submit-btn:hover {
+    background: #fff;
+    color: #6278df;
+    border: 2px solid #6278df;
+    box-shadow: 4px 4px 30px 0 #485ec0ce;
+}
+/* <!--**** BLOG SECTION **** --> */
+
+.blog-section{
+    padding: 100px 0;
+}
+.blog-title{}
+.blog-title h2{}
+.blog-title p{}
+.b-heading{
+    width: 50%;
+}
+.bt-content{
+    width: 50%;
+}
+ .blog-items{
+    width: 48%;
+} 
+.blog-section .blog-items h3{} 
+.blog-section .blog-items p{} 
+.blog-section .blog-items img{
+    
+} 
